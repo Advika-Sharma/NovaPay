@@ -1,0 +1,32 @@
+version: 2
+
+models:
+  - name: stg_transactions__accounts
+    columns:
+      - name: account_id
+        tests:
+          - unique
+          - not_null
+
+  - name: stg_transactions__merchants
+    columns:
+      - name: merchant_id
+        tests:
+          - unique
+          - not_null
+
+  - name: stg_transactions__payments
+    columns:
+      - name: payment_id
+        tests:
+          - unique
+          - not_null
+      - name: customer_id
+        tests:
+          - relationships:
+              to: ref('stg_crm__customers')
+              field: customer_id
+      - name: status
+        tests:
+          - accepted_values:
+              values: ['pending', 'completed', 'failed', 'reversed']
