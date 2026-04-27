@@ -11,7 +11,9 @@ renamed as (
         raw_data:phone::varchar as phone_number,
         raw_data:date_of_birth::date as birth_date,
         raw_data:address:city::varchar as city,
+        raw_data:address as address,
         raw_data:address:country::varchar as country_code,
+        raw_data:customer_tier::varchar as customer_tier,
         raw_data:customer_since::date as joined_date,
         raw_data:is_active::boolean as is_active_flag,
         _LOADED_AT as loaded_at
