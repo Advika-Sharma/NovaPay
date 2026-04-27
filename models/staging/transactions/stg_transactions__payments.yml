@@ -1,9 +1,9 @@
 version: 2
 
 models:
-  - name: stg_vendor__credit_scores
+  - name: stg_transactions__payments
     columns:
-      - name: credit_score_sk
+      - name: payment_id
         tests:
           - unique
           - not_null
@@ -12,10 +12,7 @@ models:
           - relationships:
               to: ref('stg_crm__customers')
               field: customer_id
-
-  - name: stg_vendor__product_catalog
-    columns:
-      - name: product_id
+      - name: status
         tests:
-          - unique
-          - not_null
+          - accepted_values:
+              values: ['pending', 'completed', 'failed', 'reversed']
