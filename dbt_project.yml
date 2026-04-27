@@ -41,3 +41,8 @@ models:
       
     marts:
       +schema: marts
+
+    marts:
+      dimensional:
+        +database: NOVAPAY_DWH
+        +schema: DIMENSIONAL
