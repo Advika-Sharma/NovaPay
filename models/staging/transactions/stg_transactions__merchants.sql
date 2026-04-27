@@ -8,6 +8,7 @@ renamed as (
         merchant_name,
         merchant_category,
         merchant_country as country_code,
+        merchant_city,
         is_active::boolean as is_active_flag,
         _LOADED_AT as loaded_at
     from source
