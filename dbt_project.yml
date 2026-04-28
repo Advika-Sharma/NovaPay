@@ -37,10 +37,8 @@ models:
         +schema: REFERENCE
 
     intermediate:
+      +database: NOVAPAY_DWH
       +schema: intermediate
-      
-    marts:
-      +schema: marts
 
     marts:
       dimensional:
