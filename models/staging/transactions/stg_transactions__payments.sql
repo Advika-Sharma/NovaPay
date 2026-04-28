@@ -14,6 +14,7 @@ renamed as (
         account_id,
         merchant_id,
         cast(payment_amount as number(18,2)) as payment_amount,
+        cast(fee_amount as number(18,2)) as fee_amount,
         payment_currency as currency_code,
         payment_status as status,
         cast(payment_date as date) as payment_date,
