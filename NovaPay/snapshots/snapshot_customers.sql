@@ -2,6 +2,8 @@
 
 {{
     config(
+      database='NOVAPAY_DWH',
+      schema='SNAPSHOTS',
       unique_key='CUSTOMER_ID',
       strategy='check',
       check_cols='all',

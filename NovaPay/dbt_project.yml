@@ -25,11 +25,15 @@ models:
     data_vault:
       +database: NOVAPAY_DWH
       +schema: DATA_VAULT
-      +materialized: incremental
+      +materialized: table
     
     staging:
       # This forces everything in the models/staging folder to be a Table
       +materialized: table
+
+      vault:
+         +schema: VAULT
+         +materialized: view
       
       # Mapping sub-folders to Snowflake Schemas
       crm:
@@ -52,5 +56,5 @@ models:
 
   snapshots:
     NovaPay:
-      +target_database: NOVAPAY_DWH
-      +target_schema: SNAPSHOTS
+      +database: NOVAPAY_DWH
+      +schema: SNAPSHOTS

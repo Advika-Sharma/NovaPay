@@ -1,4 +1,4 @@
-{{ config(materialized='incremental') }}
+{{ config(materialized='table') }}
 
 {{ automate_dv.hub(src_pk='ACCOUNT_HK', 
                    src_nk='ACCOUNT_ID', 
