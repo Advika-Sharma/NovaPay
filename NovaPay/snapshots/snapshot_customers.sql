@@ -2,13 +2,15 @@
 
 {{
     config(
-      target_schema='SNAPSHOTS',
+      database='NOVAPAY_DWH',
+      schema='SNAPSHOTS',
       unique_key='CUSTOMER_ID',
       strategy='check',
-      check_cols=['CUSTOMER_TIER', 'ADDRESS', 'IS_ACTIVE_STATUS'],
+      check_cols='all',
     )
 }}
 
+-- This selects from your staging model which contains tier, address, and status
 select * from {{ ref('stg_crm__customers') }}
 
 {% endsnapshot %}
