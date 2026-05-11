@@ -13,3 +13,8 @@ select * from {{ ref('int_fct_payments') }}
     select coalesce(max(loaded_at), '1900-01-01'::timestamp_ntz) from {{ this }}
   )
 {% endif %}
+
+qualify row_number() over (
+    partition by payment_id
+    order by loaded_at desc
+) = 1

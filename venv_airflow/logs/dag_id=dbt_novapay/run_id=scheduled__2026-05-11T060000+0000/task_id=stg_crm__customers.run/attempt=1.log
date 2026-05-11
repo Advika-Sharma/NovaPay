@@ -1,0 +1,80 @@
+{"timestamp":"2026-05-11T08:50:37.766452Z","level":"warning","event":"section/key [openlineage/namespace] not found in config","logger":"airflow.configuration","filename":"configuration.py","lineno":1111}
+{"timestamp":"2026-05-11T08:50:38.316727Z","level":"info","event":"DAG bundles loaded: dags-folder","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2026-05-11T08:50:38.319330Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/dbt_novapay.py","logger":"airflow.models.dagbag.DagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2026-05-11T08:50:38.452916Z","level":"info","event":"::group::Cosmos DAG parsing logs","logger":"cosmos.converter","filename":"converter.py","lineno":286}
+{"timestamp":"2026-05-11T08:50:38.464450Z","level":"info","event":"Trying to parse the dbt project using dbt ls cache cosmos_cache__dbt_novapay...","logger":"cosmos.dbt.graph","filename":"graph.py","lineno":781}
+{"timestamp":"2026-05-11T08:50:45.098371Z","level":"info","event":"Cosmos performance: time to calculate cache identifier cosmos_cache__dbt_novapay for current version: 6.472290820000126","logger":"cosmos.cache","filename":"cache.py","lineno":329}
+{"timestamp":"2026-05-11T08:50:45.098631Z","level":"info","event":"Cosmos performance [af0761ecc903|100]: The cache size for cosmos_cache__dbt_novapay is 47345","logger":"cosmos.dbt.graph","filename":"graph.py","lineno":798}
+{"timestamp":"2026-05-11T08:50:45.101999Z","level":"info","event":"Cosmos performance: Cache hit for cosmos_cache__dbt_novapay - ff95425c0bf3fb17f4ae606505cd9c23,d41d8cd98f00b204e9800998ecf8427e","logger":"cosmos.dbt.graph","filename":"graph.py","lineno":806}
+{"timestamp":"2026-05-11T08:50:45.103007Z","level":"info","event":"Total nodes: 52","logger":"cosmos.dbt.graph","filename":"graph.py","lineno":711}
+{"timestamp":"2026-05-11T08:50:45.103155Z","level":"info","event":"Total filtered nodes: 52","logger":"cosmos.dbt.graph","filename":"graph.py","lineno":712}
+{"timestamp":"2026-05-11T08:50:53.562322Z","level":"info","event":"Cosmos performance (dbt_novapay) -  [af0761ecc903|100]: It took 12.4s to parse the dbt project for DAG using LoadMode.DBT_LS_CACHE","logger":"cosmos.converter","filename":"converter.py","lineno":333}
+{"timestamp":"2026-05-11T08:50:53.697720Z","level":"info","event":"Cosmos performance (dbt_novapay) - [af0761ecc903|100]: It took 0.135s to build the Airflow DAG.","logger":"cosmos.converter","filename":"converter.py","lineno":380}
+{"timestamp":"2026-05-11T08:50:53.697949Z","level":"info","event":"::endgroup::Cosmos DAG parsing logs","logger":"cosmos.converter","filename":"converter.py","lineno":383}
+{"timestamp":"2026-05-11T08:50:59.028545Z","level":"info","event":"dbtRunner is available. Using dbtRunner for invoking dbt.","logger":"cosmos.operators.local","filename":"local.py","lineno":269}
+{"timestamp":"2026-05-11T08:50:59.030138Z","level":"info","event":"Cloning project to writable temp directory /tmp/tmpz4cw2wxp from /opt/airflow/NovaPay","logger":"cosmos.operators.local","filename":"local.py","lineno":494}
+{"timestamp":"2026-05-11T08:50:59.121893Z","level":"info","event":"Partial parse is enabled and the latest partial parse file is /opt/airflow/NovaPay/target/partial_parse.msgpack","logger":"cosmos.operators.local","filename":"local.py","lineno":514}
+{"timestamp":"2026-05-11T08:50:59.385339Z","level":"info","event":"Profile caching is enable.","logger":"cosmos.config","filename":"config.py","lineno":382}
+{"timestamp":"2026-05-11T08:50:59.457501Z","level":"info","event":"Using real values for profile default","logger":"cosmos.profiles.base","filename":"base.py","lineno":259}
+{"timestamp":"2026-05-11T08:50:59.462446Z","level":"info","event":"Profile not found in cache storing and using profile: /tmp/cosmos/profile/4696fe2c61fca57660474d41def9c0eb11c30fa37b466caac7574e4807f9bd46/profiles.yml.","logger":"cosmos.config","filename":"config.py","lineno":369}
+{"timestamp":"2026-05-11T08:50:59.505850Z","level":"info","event":"Trying to run dbtRunner with:\n ['deps', '--project-dir', '/tmp/tmpz4cw2wxp', '--profiles-dir', '/tmp/cosmos/profile/4696fe2c61fca57660474d41def9c0eb11c30fa37b466caac7574e4807f9bd46', '--profile', 'default', '--target', 'dev', '--no-static-parser']\n in /tmp/tmpz4cw2wxp","logger":"cosmos.dbt.runner","filename":"runner.py","lineno":98}
+{"timestamp":"2026-05-11T08:50:59.936143Z","level":"info","event":"\u001b[0m08:50:59  Running with dbt=1.11.9","logger":"task.stdout"}
+{"timestamp":"2026-05-11T08:51:00.895340Z","level":"info","event":"::group::Cosmos DAG parsing logs","logger":"cosmos.converter","filename":"converter.py","lineno":286}
+{"timestamp":"2026-05-11T08:51:00.901771Z","level":"info","event":"Trying to parse the dbt project using dbt ls cache cosmos_cache__dbt_novapay...","logger":"cosmos.dbt.graph","filename":"graph.py","lineno":781}
+{"timestamp":"2026-05-11T08:51:00.902219Z","level":"warning","event":"Using Variable.get from `airflow.models` is deprecated.Please use `get` on Variable from sdk(`airflow.sdk.Variable`) instead","category":"DeprecationWarning","filename":"/home/airflow/.local/lib/python3.12/site-packages/airflow/models/variable.py","lineno":151,"logger":"py.warnings"}
+{"timestamp":"2026-05-11T08:51:07.864521Z","level":"info","event":"Cosmos performance: time to calculate cache identifier cosmos_cache__dbt_novapay for current version: 6.925534920000246","logger":"cosmos.cache","filename":"cache.py","lineno":329}
+{"timestamp":"2026-05-11T08:51:07.864926Z","level":"info","event":"Cosmos performance [af0761ecc903|100]: The cache size for cosmos_cache__dbt_novapay is 47345","logger":"cosmos.dbt.graph","filename":"graph.py","lineno":798}
+{"timestamp":"2026-05-11T08:51:07.867717Z","level":"info","event":"Cosmos performance: Cache hit for cosmos_cache__dbt_novapay - ff95425c0bf3fb17f4ae606505cd9c23,d41d8cd98f00b204e9800998ecf8427e","logger":"cosmos.dbt.graph","filename":"graph.py","lineno":806}
+{"timestamp":"2026-05-11T08:51:07.869193Z","level":"info","event":"Total nodes: 52","logger":"cosmos.dbt.graph","filename":"graph.py","lineno":711}
+{"timestamp":"2026-05-11T08:51:07.869371Z","level":"info","event":"Total filtered nodes: 52","logger":"cosmos.dbt.graph","filename":"graph.py","lineno":712}
+{"timestamp":"2026-05-11T08:51:14.058341Z","level":"info","event":"Cosmos performance (dbt_novapay) -  [af0761ecc903|100]: It took 13.2s to parse the dbt project for DAG using LoadMode.DBT_LS_CACHE","logger":"cosmos.converter","filename":"converter.py","lineno":333}
+{"timestamp":"2026-05-11T08:51:14.251158Z","level":"info","event":"Cosmos performance (dbt_novapay) - [af0761ecc903|100]: It took 0.193s to build the Airflow DAG.","logger":"cosmos.converter","filename":"converter.py","lineno":380}
+{"timestamp":"2026-05-11T08:51:14.251483Z","level":"info","event":"::endgroup::Cosmos DAG parsing logs","logger":"cosmos.converter","filename":"converter.py","lineno":383}
+{"timestamp":"2026-05-11T08:51:15.287930Z","level":"info","event":"\u001b[0m08:51:15  Installing dbt-labs/dbt_utils","logger":"task.stdout"}
+{"timestamp":"2026-05-11T08:51:15.865166Z","level":"info","event":"\u001b[0m08:51:15  Installed from version 1.3.3","logger":"task.stdout"}
+{"timestamp":"2026-05-11T08:51:15.867563Z","level":"info","event":"\u001b[0m08:51:15  Up to date!","logger":"task.stdout"}
+{"timestamp":"2026-05-11T08:51:15.868788Z","level":"info","event":"\u001b[0m08:51:15  Installing Datavault-UK/automate_dv","logger":"task.stdout"}
+{"timestamp":"2026-05-11T08:51:16.369045Z","level":"info","event":"\u001b[0m08:51:16  Installed from version 0.11.5","logger":"task.stdout"}
+{"timestamp":"2026-05-11T08:51:16.370563Z","level":"info","event":"\u001b[0m08:51:16  Up to date!","logger":"task.stdout"}
+{"timestamp":"2026-05-11T08:51:17.544622Z","level":"info","event":"Trying to run dbtRunner with:\n ['run', '--select', 'fqn:NovaPay.staging.crm.stg_crm__customers', '--project-dir', '/tmp/tmpz4cw2wxp', '--profiles-dir', '/tmp/cosmos/profile/4696fe2c61fca57660474d41def9c0eb11c30fa37b466caac7574e4807f9bd46', '--profile', 'default', '--target', 'dev', '--no-static-parser']\n in /tmp/tmpz4cw2wxp","logger":"cosmos.dbt.runner","filename":"runner.py","lineno":98}
+{"timestamp":"2026-05-11T08:51:17.568653Z","level":"info","event":"\u001b[0m08:51:17  Running with dbt=1.11.9","logger":"task.stdout"}
+{"timestamp":"2026-05-11T08:51:25.376362Z","level":"info","event":"\u001b[0m08:51:25  Registered adapter: snowflake=1.11.4","logger":"task.stdout"}
+{"timestamp":"2026-05-11T08:51:30.664646Z","level":"info","event":"\u001b[0m08:51:30  Unable to do partial parsing because of a version mismatch","logger":"task.stdout"}
+{"timestamp":"2026-05-11T08:51:31.568279Z","level":"info","event":"\u001b[0m08:51:31  [\u001b[33mWARNING\u001b[0m][PropertyMovedToConfigDeprecation]: Deprecated functionality","logger":"task.stdout"}
+{"timestamp":"2026-05-11T08:51:31.569029Z","level":"info","event":"Found `freshness` as a top-level property of `sources[0]` in file","logger":"task.stdout"}
+{"timestamp":"2026-05-11T08:51:31.570804Z","level":"info","event":"`models/staging/sources.yml`. The `freshness` top-level property should be moved","logger":"task.stdout"}
+{"timestamp":"2026-05-11T08:51:31.573211Z","level":"info","event":"into the `config` of `sources[0]`.","logger":"task.stdout"}
+{"timestamp":"2026-05-11T08:51:52.797185Z","level":"info","event":"\u001b[0m08:51:52  [\u001b[33mWARNING\u001b[0m][MissingArgumentsPropertyInGenericTestDeprecation]: Deprecated","logger":"task.stdout"}
+{"timestamp":"2026-05-11T08:51:52.805792Z","level":"info","event":"functionality","logger":"task.stdout"}
+{"timestamp":"2026-05-11T08:51:52.812116Z","level":"info","event":"Found top-level arguments to test `relationships` defined on","logger":"task.stdout"}
+{"timestamp":"2026-05-11T08:51:52.812779Z","level":"info","event":"'stg_crm__customer_interactions' in package 'NovaPay'","logger":"task.stdout"}
+{"timestamp":"2026-05-11T08:51:52.825752Z","level":"info","event":"(models/staging/crm/stg_crm__customer_interactions.yml). Arguments to generic","logger":"task.stdout"}
+{"timestamp":"2026-05-11T08:51:52.827185Z","level":"info","event":"tests should be nested under the `arguments` property.","logger":"task.stdout"}
+{"timestamp":"2026-05-11T08:51:54.757117Z","level":"info","event":"\u001b[0m08:51:54  [\u001b[33mWARNING\u001b[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.","logger":"task.stdout"}
+{"timestamp":"2026-05-11T08:51:54.768170Z","level":"info","event":"There are 1 unused configuration paths:","logger":"task.stdout"}
+{"timestamp":"2026-05-11T08:51:54.782711Z","level":"info","event":"- models.snapshots.NovaPay","logger":"task.stdout"}
+{"timestamp":"2026-05-11T08:51:59.359817Z","level":"info","event":"\u001b[0m08:51:59  Found 22 models, 1 snapshot, 21 data tests, 8 sources, 920 macros","logger":"task.stdout"}
+{"timestamp":"2026-05-11T08:51:59.373354Z","level":"info","event":"\u001b[0m08:51:59","logger":"task.stdout"}
+{"timestamp":"2026-05-11T08:51:59.376240Z","level":"info","event":"\u001b[0m08:51:59  Concurrency: 4 threads (target='dev')","logger":"task.stdout"}
+{"timestamp":"2026-05-11T08:51:59.377296Z","level":"info","event":"\u001b[0m08:51:59","logger":"task.stdout"}
+{"timestamp":"2026-05-11T08:52:05.481925Z","level":"info","event":"\u001b[0m08:52:05  1 of 1 START sql table model CRM.stg_crm__customers ............................ [RUN]","logger":"task.stdout"}
+{"timestamp":"2026-05-11T08:52:06.638943Z","level":"info","event":"\u001b[0m08:52:06  1 of 1 OK created sql table model CRM.stg_crm__customers ....................... [\u001b[32mSUCCESS 50000\u001b[0m in 1.15s]","logger":"task.stdout"}
+{"timestamp":"2026-05-11T08:52:07.094629Z","level":"info","event":"\u001b[0m08:52:07","logger":"task.stdout"}
+{"timestamp":"2026-05-11T08:52:07.095380Z","level":"info","event":"\u001b[0m08:52:07  Finished running 1 table model in 0 hours 0 minutes and 7.72 seconds (7.72s).","logger":"task.stdout"}
+{"timestamp":"2026-05-11T08:52:07.257209Z","level":"info","event":"\u001b[0m08:52:07","logger":"task.stdout"}
+{"timestamp":"2026-05-11T08:52:07.258895Z","level":"info","event":"\u001b[0m08:52:07  \u001b[32mCompleted successfully\u001b[0m","logger":"task.stdout"}
+{"timestamp":"2026-05-11T08:52:07.260660Z","level":"info","event":"\u001b[0m08:52:07","logger":"task.stdout"}
+{"timestamp":"2026-05-11T08:52:07.262016Z","level":"info","event":"\u001b[0m08:52:07  Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1","logger":"task.stdout"}
+{"timestamp":"2026-05-11T08:52:07.264065Z","level":"info","event":"\u001b[0m08:52:07  [\u001b[33mWARNING\u001b[0m][DeprecationsSummary]: Deprecated functionality","logger":"task.stdout"}
+{"timestamp":"2026-05-11T08:52:07.264792Z","level":"info","event":"Summary of encountered deprecations:","logger":"task.stdout"}
+{"timestamp":"2026-05-11T08:52:07.265370Z","level":"info","event":"- PropertyMovedToConfigDeprecation: 8 occurrences","logger":"task.stdout"}
+{"timestamp":"2026-05-11T08:52:07.265912Z","level":"info","event":"- MissingArgumentsPropertyInGenericTestDeprecation: 4 occurrences","logger":"task.stdout"}
+{"timestamp":"2026-05-11T08:52:07.266470Z","level":"info","event":"To see all deprecation instances instead of just the first occurrence of each,","logger":"task.stdout"}
+{"timestamp":"2026-05-11T08:52:07.267051Z","level":"info","event":"run command again with the `--show-all-deprecations` flag. You may also need to","logger":"task.stdout"}
+{"timestamp":"2026-05-11T08:52:07.267621Z","level":"info","event":"run with `--no-partial-parse` as some deprecations are only encountered during","logger":"task.stdout"}
+{"timestamp":"2026-05-11T08:52:07.268192Z","level":"info","event":"parsing.","logger":"task.stdout"}
+{"timestamp":"2026-05-11T08:52:08.648548Z","level":"warning","event":"Airflow 3.0.0 Asset (Dataset) URIs validation rules changed and OpenLineage URIs (standard used by Cosmos) are no longer accepted. Therefore, if using Cosmos with Airflow 3, the Airflow Asset (Dataset) URI is now <snowflake://SOCFUIW-ZG17767/NOVAPAY_RAW/CRM/customers>. Before, with Airflow 2.x, the URI used to be <snowflake://SOCFUIW-ZG17767/NOVAPAY_RAW.CRM.customers>. Please, change any DAGs that were scheduled using the old standard to the new one.","logger":"cosmos.dataset","filename":"dataset.py","lineno":227}
+{"timestamp":"2026-05-11T08:52:16.551989Z","level":"warning","event":"Airflow 3.0.0 Asset (Dataset) URIs validation rules changed and OpenLineage URIs (standard used by Cosmos) are no longer accepted. Therefore, if using Cosmos with Airflow 3, the Airflow Asset (Dataset) URI is now <snowflake://SOCFUIW-ZG17767/NOVAPAY_STAGING/CRM/stg_crm__customers>. Before, with Airflow 2.x, the URI used to be <snowflake://SOCFUIW-ZG17767/NOVAPAY_STAGING.CRM.stg_crm__customers>. Please, change any DAGs that were scheduled using the old standard to the new one.","logger":"cosmos.dataset","filename":"dataset.py","lineno":227}
+{"timestamp":"2026-05-11T08:52:16.554354Z","level":"info","event":"Inlets: [Asset(name='snowflake://SOCFUIW-ZG17767/NOVAPAY_RAW/CRM/customers', uri='snowflake://SOCFUIW-ZG17767/NOVAPAY_RAW/CRM/customers', group='asset', extra={}, watchers=[])]","logger":"cosmos.operators.local","filename":"local.py","lineno":571}
+{"timestamp":"2026-05-11T08:52:16.554683Z","level":"info","event":"Outlets: [Asset(name='snowflake://SOCFUIW-ZG17767/NOVAPAY_STAGING/CRM/stg_crm__customers', uri='snowflake://SOCFUIW-ZG17767/NOVAPAY_STAGING/CRM/stg_crm__customers', group='asset', extra={}, watchers=[])]","logger":"cosmos.operators.local","filename":"local.py","lineno":572}
+{"timestamp":"2026-05-11T08:52:16.555058Z","level":"info","event":"Assigning outlets with DatasetAlias in Airflow 3","logger":"cosmos.operators.local","filename":"local.py","lineno":820}

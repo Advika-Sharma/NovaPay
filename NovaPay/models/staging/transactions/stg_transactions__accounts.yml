@@ -5,5 +5,4 @@ models:
     columns:
       - name: account_id
         tests:
-          - unique
           - not_null

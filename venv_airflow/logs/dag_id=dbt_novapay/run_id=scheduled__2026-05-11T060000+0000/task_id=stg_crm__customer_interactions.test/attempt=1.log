@@ -1,0 +1,59 @@
+{"timestamp":"2026-05-11T08:52:21.307718Z","level":"warning","event":"section/key [openlineage/namespace] not found in config","logger":"airflow.configuration","filename":"configuration.py","lineno":1111}
+{"timestamp":"2026-05-11T08:52:21.890794Z","level":"info","event":"DAG bundles loaded: dags-folder","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2026-05-11T08:52:21.894329Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/dbt_novapay.py","logger":"airflow.models.dagbag.DagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2026-05-11T08:52:22.082135Z","level":"info","event":"::group::Cosmos DAG parsing logs","logger":"cosmos.converter","filename":"converter.py","lineno":286}
+{"timestamp":"2026-05-11T08:52:22.123097Z","level":"info","event":"Trying to parse the dbt project using dbt ls cache cosmos_cache__dbt_novapay...","logger":"cosmos.dbt.graph","filename":"graph.py","lineno":781}
+{"timestamp":"2026-05-11T08:52:35.816643Z","level":"info","event":"Cosmos performance: time to calculate cache identifier cosmos_cache__dbt_novapay for current version: 10.87783504700019","logger":"cosmos.cache","filename":"cache.py","lineno":329}
+{"timestamp":"2026-05-11T08:52:35.817394Z","level":"info","event":"Cosmos performance [af0761ecc903|298]: The cache size for cosmos_cache__dbt_novapay is 47345","logger":"cosmos.dbt.graph","filename":"graph.py","lineno":798}
+{"timestamp":"2026-05-11T08:52:35.822404Z","level":"info","event":"Cosmos performance: Cache hit for cosmos_cache__dbt_novapay - ff95425c0bf3fb17f4ae606505cd9c23,d41d8cd98f00b204e9800998ecf8427e","logger":"cosmos.dbt.graph","filename":"graph.py","lineno":806}
+{"timestamp":"2026-05-11T08:52:35.823858Z","level":"info","event":"Total nodes: 52","logger":"cosmos.dbt.graph","filename":"graph.py","lineno":711}
+{"timestamp":"2026-05-11T08:52:35.824074Z","level":"info","event":"Total filtered nodes: 52","logger":"cosmos.dbt.graph","filename":"graph.py","lineno":712}
+{"timestamp":"2026-05-11T08:52:42.663274Z","level":"info","event":"Cosmos performance (dbt_novapay) -  [af0761ecc903|298]: It took 17.8s to parse the dbt project for DAG using LoadMode.DBT_LS_CACHE","logger":"cosmos.converter","filename":"converter.py","lineno":333}
+{"timestamp":"2026-05-11T08:52:42.856757Z","level":"info","event":"Cosmos performance (dbt_novapay) - [af0761ecc903|298]: It took 0.193s to build the Airflow DAG.","logger":"cosmos.converter","filename":"converter.py","lineno":380}
+{"timestamp":"2026-05-11T08:52:42.857157Z","level":"info","event":"::endgroup::Cosmos DAG parsing logs","logger":"cosmos.converter","filename":"converter.py","lineno":383}
+{"timestamp":"2026-05-11T08:52:48.363026Z","level":"info","event":"dbtRunner is available. Using dbtRunner for invoking dbt.","logger":"cosmos.operators.local","filename":"local.py","lineno":269}
+{"timestamp":"2026-05-11T08:52:48.365200Z","level":"info","event":"Cloning project to writable temp directory /tmp/tmpbn53eey4 from /opt/airflow/NovaPay","logger":"cosmos.operators.local","filename":"local.py","lineno":494}
+{"timestamp":"2026-05-11T08:52:48.404053Z","level":"info","event":"Partial parse is enabled and the latest partial parse file is /tmp/cosmos/dbt_novapay/target/partial_parse.msgpack","logger":"cosmos.operators.local","filename":"local.py","lineno":514}
+{"timestamp":"2026-05-11T08:52:48.460902Z","level":"info","event":"Profile caching is enable.","logger":"cosmos.config","filename":"config.py","lineno":382}
+{"timestamp":"2026-05-11T08:52:48.553727Z","level":"info","event":"Profile found in cache using profile: /tmp/cosmos/profile/4696fe2c61fca57660474d41def9c0eb11c30fa37b466caac7574e4807f9bd46/profiles.yml.","logger":"cosmos.config","filename":"config.py","lineno":362}
+{"timestamp":"2026-05-11T08:52:48.602388Z","level":"info","event":"Trying to run dbtRunner with:\n ['deps', '--project-dir', '/tmp/tmpbn53eey4', '--profiles-dir', '/tmp/cosmos/profile/4696fe2c61fca57660474d41def9c0eb11c30fa37b466caac7574e4807f9bd46', '--profile', 'default', '--target', 'dev', '--no-static-parser']\n in /tmp/tmpbn53eey4","logger":"cosmos.dbt.runner","filename":"runner.py","lineno":98}
+{"timestamp":"2026-05-11T08:52:48.969057Z","level":"info","event":"\u001b[0m08:52:48  Running with dbt=1.11.9","logger":"task.stdout"}
+{"timestamp":"2026-05-11T08:52:50.008938Z","level":"info","event":"::group::Cosmos DAG parsing logs","logger":"cosmos.converter","filename":"converter.py","lineno":286}
+{"timestamp":"2026-05-11T08:52:50.018813Z","level":"info","event":"Trying to parse the dbt project using dbt ls cache cosmos_cache__dbt_novapay...","logger":"cosmos.dbt.graph","filename":"graph.py","lineno":781}
+{"timestamp":"2026-05-11T08:52:50.019718Z","level":"warning","event":"Using Variable.get from `airflow.models` is deprecated.Please use `get` on Variable from sdk(`airflow.sdk.Variable`) instead","category":"DeprecationWarning","filename":"/home/airflow/.local/lib/python3.12/site-packages/airflow/models/variable.py","lineno":151,"logger":"py.warnings"}
+{"timestamp":"2026-05-11T08:52:59.633061Z","level":"info","event":"Cosmos performance: time to calculate cache identifier cosmos_cache__dbt_novapay for current version: 9.571522249999362","logger":"cosmos.cache","filename":"cache.py","lineno":329}
+{"timestamp":"2026-05-11T08:52:59.634395Z","level":"info","event":"Cosmos performance [af0761ecc903|298]: The cache size for cosmos_cache__dbt_novapay is 47345","logger":"cosmos.dbt.graph","filename":"graph.py","lineno":798}
+{"timestamp":"2026-05-11T08:52:59.648272Z","level":"info","event":"Cosmos performance: Cache hit for cosmos_cache__dbt_novapay - ff95425c0bf3fb17f4ae606505cd9c23,d41d8cd98f00b204e9800998ecf8427e","logger":"cosmos.dbt.graph","filename":"graph.py","lineno":806}
+{"timestamp":"2026-05-11T08:52:59.649676Z","level":"info","event":"Total nodes: 52","logger":"cosmos.dbt.graph","filename":"graph.py","lineno":711}
+{"timestamp":"2026-05-11T08:52:59.650014Z","level":"info","event":"Total filtered nodes: 52","logger":"cosmos.dbt.graph","filename":"graph.py","lineno":712}
+{"timestamp":"2026-05-11T08:53:09.926710Z","level":"info","event":"Cosmos performance (dbt_novapay) -  [af0761ecc903|298]: It took 17.2s to parse the dbt project for DAG using LoadMode.DBT_LS_CACHE","logger":"cosmos.converter","filename":"converter.py","lineno":333}
+{"timestamp":"2026-05-11T08:53:10.213685Z","level":"info","event":"Cosmos performance (dbt_novapay) - [af0761ecc903|298]: It took 0.287s to build the Airflow DAG.","logger":"cosmos.converter","filename":"converter.py","lineno":380}
+{"timestamp":"2026-05-11T08:53:10.214428Z","level":"info","event":"::endgroup::Cosmos DAG parsing logs","logger":"cosmos.converter","filename":"converter.py","lineno":383}
+{"timestamp":"2026-05-11T08:53:10.670579Z","level":"info","event":"\u001b[0m08:53:10  Installing dbt-labs/dbt_utils","logger":"task.stdout"}
+{"timestamp":"2026-05-11T08:53:11.370105Z","level":"info","event":"\u001b[0m08:53:11  Installed from version 1.3.3","logger":"task.stdout"}
+{"timestamp":"2026-05-11T08:53:11.371154Z","level":"info","event":"\u001b[0m08:53:11  Up to date!","logger":"task.stdout"}
+{"timestamp":"2026-05-11T08:53:11.374087Z","level":"info","event":"\u001b[0m08:53:11  Installing Datavault-UK/automate_dv","logger":"task.stdout"}
+{"timestamp":"2026-05-11T08:53:11.994176Z","level":"info","event":"\u001b[0m08:53:11  Installed from version 0.11.5","logger":"task.stdout"}
+{"timestamp":"2026-05-11T08:53:11.997532Z","level":"info","event":"\u001b[0m08:53:11  Up to date!","logger":"task.stdout"}
+{"timestamp":"2026-05-11T08:53:13.587609Z","level":"info","event":"Trying to run dbtRunner with:\n ['test', '--select', 'stg_crm__customer_interactions', '--project-dir', '/tmp/tmpbn53eey4', '--profiles-dir', '/tmp/cosmos/profile/4696fe2c61fca57660474d41def9c0eb11c30fa37b466caac7574e4807f9bd46', '--profile', 'default', '--target', 'dev', '--no-static-parser']\n in /tmp/tmpbn53eey4","logger":"cosmos.dbt.runner","filename":"runner.py","lineno":98}
+{"timestamp":"2026-05-11T08:53:13.793361Z","level":"info","event":"\u001b[0m08:53:13  Running with dbt=1.11.9","logger":"task.stdout"}
+{"timestamp":"2026-05-11T08:53:16.433047Z","level":"info","event":"\u001b[0m08:53:16  Registered adapter: snowflake=1.11.4","logger":"task.stdout"}
+{"timestamp":"2026-05-11T08:53:23.389868Z","level":"info","event":"\u001b[0m08:53:23  [\u001b[33mWARNING\u001b[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.","logger":"task.stdout"}
+{"timestamp":"2026-05-11T08:53:23.390989Z","level":"info","event":"There are 1 unused configuration paths:","logger":"task.stdout"}
+{"timestamp":"2026-05-11T08:53:23.397280Z","level":"info","event":"- models.snapshots.NovaPay","logger":"task.stdout"}
+{"timestamp":"2026-05-11T08:53:25.663748Z","level":"info","event":"\u001b[0m08:53:25  Found 22 models, 1 snapshot, 21 data tests, 8 sources, 920 macros","logger":"task.stdout"}
+{"timestamp":"2026-05-11T08:53:25.679645Z","level":"info","event":"\u001b[0m08:53:25","logger":"task.stdout"}
+{"timestamp":"2026-05-11T08:53:25.680580Z","level":"info","event":"\u001b[0m08:53:25  Concurrency: 4 threads (target='dev')","logger":"task.stdout"}
+{"timestamp":"2026-05-11T08:53:25.681277Z","level":"info","event":"\u001b[0m08:53:25","logger":"task.stdout"}
+{"timestamp":"2026-05-11T08:53:28.608450Z","level":"info","event":"\u001b[0m08:53:28  1 of 3 START test not_null_stg_crm__customer_interactions_interaction_sk ....... [RUN]","logger":"task.stdout"}
+{"timestamp":"2026-05-11T08:53:28.639308Z","level":"info","event":"\u001b[0m08:53:28  2 of 3 START test relationships_stg_crm__customer_interactions_customer_id__customer_id__ref_stg_crm__customers_  [RUN]","logger":"task.stdout"}
+{"timestamp":"2026-05-11T08:53:28.640210Z","level":"info","event":"\u001b[0m08:53:28  3 of 3 START test unique_stg_crm__customer_interactions_interaction_sk ......... [RUN]","logger":"task.stdout"}
+{"timestamp":"2026-05-11T08:53:29.134600Z","level":"info","event":"\u001b[0m08:53:29  1 of 3 PASS not_null_stg_crm__customer_interactions_interaction_sk ............. [\u001b[32mPASS\u001b[0m in 0.52s]","logger":"task.stdout"}
+{"timestamp":"2026-05-11T08:53:29.212509Z","level":"info","event":"\u001b[0m08:53:29  3 of 3 PASS unique_stg_crm__customer_interactions_interaction_sk ............... [\u001b[32mPASS\u001b[0m in 0.56s]","logger":"task.stdout"}
+{"timestamp":"2026-05-11T08:53:29.233406Z","level":"info","event":"\u001b[0m08:53:29  2 of 3 PASS relationships_stg_crm__customer_interactions_customer_id__customer_id__ref_stg_crm__customers_  [\u001b[32mPASS\u001b[0m in 0.60s]","logger":"task.stdout"}
+{"timestamp":"2026-05-11T08:53:29.715669Z","level":"info","event":"\u001b[0m08:53:29","logger":"task.stdout"}
+{"timestamp":"2026-05-11T08:53:29.716287Z","level":"info","event":"\u001b[0m08:53:29  Finished running 3 data tests in 0 hours 0 minutes and 4.03 seconds (4.03s).","logger":"task.stdout"}
+{"timestamp":"2026-05-11T08:53:30.021570Z","level":"info","event":"\u001b[0m08:53:30","logger":"task.stdout"}
+{"timestamp":"2026-05-11T08:53:30.022146Z","level":"info","event":"\u001b[0m08:53:30  \u001b[32mCompleted successfully\u001b[0m","logger":"task.stdout"}
+{"timestamp":"2026-05-11T08:53:30.022961Z","level":"info","event":"\u001b[0m08:53:30","logger":"task.stdout"}
+{"timestamp":"2026-05-11T08:53:30.023730Z","level":"info","event":"\u001b[0m08:53:30  Done. PASS=3 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=3","logger":"task.stdout"}
