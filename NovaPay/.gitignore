@@ -2,10 +2,3 @@
 target/
 dbt_packages/
 logs/
-venv_airflow/.env
-venv_airflow/config/
-venv_airflow/plugins/
-venv_airflow/logs/
-venv_airflow/lib/
-venv_airflow/include/
-venv_airflow/Scripts/
