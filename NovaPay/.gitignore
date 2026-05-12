@@ -8,5 +8,4 @@ venv_airflow/plugins/
 venv_airflow/logs/
 venv_airflow/lib/
 venv_airflow/include/
-venv_airflow/plugins/
-venv_airflow/scripts/
+venv_airflow/Scripts/
